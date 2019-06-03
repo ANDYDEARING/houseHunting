@@ -51,5 +51,5 @@ number_of_months = 0
 while current_savings <= (total_cost * portion_down_payment):
     number_of_months = number_of_months + 1
     current_savings = current_savings + ((current_savings * annual_return)/12) + (portion_saved * (annual_salary/12))
-    print("Month " + str(number_of_months) + " Savings " + str(current_savings))
+    print("Month " + str(number_of_months) + " Savings $" + str(round(current_savings,2)))
 print("It will take " + str(number_of_months) + " months.")
